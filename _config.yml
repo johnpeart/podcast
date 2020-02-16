@@ -1,0 +1,68 @@
+# Site settings
+
+# host: 192.168.1.66
+
+title: John Peart
+author: John Peart
+description: "I'm John Peart. I write a lot about data, digital and technology, Eurovision, and government. I'm #OfTheGovernment - for my day job and as a volunteer."
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://podcast.johnpe.art"
+
+# Images and assets
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+
+hero-images-path: "/assets/images/hero"
+social-images-path: "/assets/images/social"
+post-images-path: "/assets/images/posts"
+
+logo-png: "/assets/images/site/logo.png"
+logo-svg: "/assets/images/site/logo.svg"
+
+social-media-image: "/assets/images/site/social-media.png"
+
+touch: "/assets/images/site/touch.png"
+pinned: "/assets/images/site/pinned.svg"
+pinned-colour: "#007aff"
+logo-favicon-small: "/assets/images/site/favicon-16x16.png"
+logo-favicon-medium: "/assets/images/site/favicon-32x32.png"
+logo-favicon-large: "/assets/images/site/favicon-96x96.png"
+
+# Social settings
+twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
+twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
+
+mastodon-url: "https://mastodon.social/@johnpeart"
+mastodon-handle: "johnpeart@mastodon.social"
+
+linkedin-url:  "https://www.linkedin.com/in/jrpeart"
+linkedin-handle:  "jrpeart"
+
+flickr-url:  "https://www.flickr.com/photos/johnpeart"
+flickr-handle:  "johnpeart"
+
+instagram-url:  "https://www.instagram.com/johnpeart"
+instagram-handle:  "johnpeart"
+
+github-url:  "https://github.com/johnpeart"
+github-handle:  "johnpeart"
+
+# Google settings
+google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk"
+google-analytics: "UA-27553664-1" # GA ID code
+
+# Plugins and build settings
+
+permalink: pretty
+markdown: kramdown
+future: false
+highlighter: rouge
+sass:
+    sass_dir: _sass
+
+plugins:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from

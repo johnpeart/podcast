@@ -1,0 +1,96 @@
+// Home page styles
+
+body#home {
+
+	main#content {
+		
+	}
+
+	section {
+		padding-top: 			100px;
+		padding-bottom: 		100px;
+	}
+
+	section#podcasts {
+
+		display: grid;
+		align-items: center;
+		justify-items: center;
+
+		background: $gray-300;
+
+		min-height: 100vh;
+
+		div.container {
+			display: grid;
+			justify-items: center;
+		}
+		
+		div#podcasts-icon {
+			display: 	grid;
+			
+			width: 		200px;
+			height: 	200px;
+	
+			margin: 	100px 0;
+			
+			@include md-up {
+				margin-top: 50px;
+			}
+
+			padding: 	45px;
+		
+			div.play {
+				display: inline-block;
+				content: "";
+				justify-self: center;
+				align-self: center;
+				width: 100px;
+				height: 100px;
+				margin-left: 15px;
+				border-style: solid;
+				border-width: 50px 0 50px 86.6px;
+				border-color: transparent transparent transparent $gray-800;
+			}
+
+			&.start {
+				@include neu-flat-raised($gray-300, $gray-500, $true-white, 0px, 30px);
+				transition: all 1s ease;
+				transform: scale(0.96, 0.96);
+			}
+	
+			&.end {
+				@include neu-flat-raised($gray-300, $gray-500, $true-white, 50px, 30px);
+				transition: all 1s ease 0.25s;
+				transform: scale(1, 1);
+			}
+		}
+	}
+	
+	section#dept-bad-ideas {
+		background: #ffd700;
+
+		div {
+		
+			display: grid;
+
+			img {
+				max-width: 100%;
+				max-width: 500px;
+
+				justify-self: center;
+			}
+
+		}
+
+	}
+	
+	section#wdydt {
+		background: $cyan;
+		
+		div.box{
+			@include neu-flat-raised($cyan, #0087c1, #00b7ff, 50px, 30px);
+		}
+	}
+		
+}
