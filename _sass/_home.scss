@@ -10,7 +10,6 @@ body#home {
 		padding-top: 			100px;
 		padding-bottom: 		100px;
 
-		min-height: 100vh;
 
 	}
 
@@ -19,6 +18,8 @@ body#home {
 		display: grid;
 		align-items: center;
 		justify-items: center;
+
+		min-height: 100vh;
 
 		background: $gray-200;
 
@@ -81,15 +82,54 @@ body#home {
 	section#dept-bad-ideas {
 		background: #ffd700;
 
+		padding-bottom: 50px;
+
 		div {
 		
 			display: grid;
 
+			justify-items: center;
+			align-items: center;
+
 			img {
 				max-width: 100%;
-				max-width: 500px;
-
+				padding: 0 20px;
+				@include md-up{
+					padding: 0;
+					max-width: 500px;
+				}
 				justify-self: center;
+			}
+
+			p {
+				text-align: center;
+				@extend h2;
+			}
+			a.button {
+
+				display: inline-block;
+				padding: 20px 50px;
+
+				border: 1px #fff70027 solid;
+				@include neu-flat-raised(#ffd700, #d9b80099, #fff70099, 15px, 10px);
+
+				transform: scale(1,1);
+				text-decoration: none;
+				transition: all 0.25s ease;
+
+				&:hover,
+				&:focus {
+					color: $black;
+					@include neu-flat-raised(#ffd700, #d9b70099, #fff70099, 5px, 10px);
+					transition: all 0.25s ease;
+					transform: scale(0.99, 0.99);
+				}
+				&:active {
+					color: $black;
+					@include neu-flat-inset(#ffd700, #d9b70099, #fff70099, 5px, 10px);
+					transition: all 0.25s ease;
+					transform: scale(0.98, 0.98);
+				}
 			}
 
 		}
