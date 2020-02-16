@@ -33,12 +33,20 @@ body#home {
 			height: 	200px;
 	
 			margin: 	100px 0;
+
+			justify-content: flex-end;
 			
 			@include md-up {
 				margin-top: 50px;
 			}
 
-			padding: 	45px;
+			padding: 	40px;
+
+			img {
+				display: inline-block;
+				max-width: 100%;
+				max-height: 100%;
+			}
 		
 			div.play {
 				display: inline-block;
@@ -57,12 +65,14 @@ body#home {
 				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 0px, 30px);
 				transition: all 1s ease;
 				transform: scale(0.96, 0.96);
+				border: 1px #ffffff00 solid;
 			}
 	
 			&.end {
 				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 50px, 30px);
 				transition: all 1s ease 0.25s;
 				transform: scale(1, 1);
+				border: 1px #ffffff33 solid;
 			}
 		}
 	}
