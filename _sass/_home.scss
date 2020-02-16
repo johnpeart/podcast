@@ -17,7 +17,7 @@ body#home {
 		align-items: center;
 		justify-items: center;
 
-		background: $gray-300;
+		background: $gray-200;
 
 		min-height: 100vh;
 
@@ -50,17 +50,17 @@ body#home {
 				margin-left: 15px;
 				border-style: solid;
 				border-width: 50px 0 50px 86.6px;
-				border-color: transparent transparent transparent $gray-800;
+				border-color: transparent transparent transparent $black;
 			}
 
 			&.start {
-				@include neu-flat-raised($gray-300, $gray-500, $true-white, 0px, 30px);
+				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 0px, 30px);
 				transition: all 1s ease;
 				transform: scale(0.96, 0.96);
 			}
 	
 			&.end {
-				@include neu-flat-raised($gray-300, $gray-500, $true-white, 50px, 30px);
+				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 50px, 30px);
 				transition: all 1s ease 0.25s;
 				transform: scale(1, 1);
 			}
