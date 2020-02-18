@@ -76,6 +76,13 @@ body#home {
 				transform: scale(1, 1);
 				border: 1px #ffffff33 solid;
 			}
+
+			&:hover,
+			&:focus {
+				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 5px, 30px);
+				transition: all 0.25s ease;
+				transform: scale(0.99, 0.99);
+			}
 		}
 	}
 	
