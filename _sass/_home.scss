@@ -23,6 +23,10 @@ body#home {
 
 		background: $gray-200;
 
+		@include dark-mode {
+			background: $gray-800;
+		}
+
 		div.container {
 			display: grid;
 			justify-items: center;
@@ -61,25 +65,43 @@ body#home {
 				border-style: solid;
 				border-width: 50px 0 50px 86.6px;
 				border-color: transparent transparent transparent $black;
+				@include dark-mode {
+					border-color: transparent transparent transparent $gray-600 !important;
+				}
 			}
 
 			&.start {
 				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 0px, 30px);
+				@include dark-mode {
+					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 0px, 30px);
+				}
 				transition: all 1s ease;
 				transform: scale(0.96, 0.96);
 				border: 1px #ffffff00 solid;
+				@include dark-mode {
+					border: 1px #22222233 solid;
+				}
 			}
 	
 			&.end {
 				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 50px, 30px);
+				@include dark-mode {
+					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 50px, 30px);
+				}
 				transition: all 1s ease 0.25s;
 				transform: scale(1, 1);
 				border: 1px #ffffff33 solid;
+				@include dark-mode {
+					border: 1px #22222233 solid;
+				}
 			}
 
 			&:hover,
 			&:focus {
 				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 5px, 30px);
+				@include dark-mode {
+					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 5px, 30px);
+				}
 				transition: all 0.25s ease;
 				transform: scale(0.99, 0.99);
 			}
@@ -88,6 +110,7 @@ body#home {
 	
 	section#dept-bad-ideas {
 		background: #ffd700;
+		color: $black;
 
 		padding-bottom: 50px;
 
@@ -114,6 +137,7 @@ body#home {
 			}
 			a.button {
 
+				color: $black;
 				display: inline-block;
 				padding: 20px 50px;
 
