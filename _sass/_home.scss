@@ -13,166 +13,232 @@ body#home {
 
 	}
 
-	section#podcasts {
+	div.logo {
 
-		display: grid;
-		align-items: center;
-		justify-items: center;
+		display: 		inline-block;
+		position: 		relative;
 
-		min-height: 100vh;
-
-		background: $gray-200;
-
-		@include dark-mode {
-			background: $gray-800;
+		@include xs {
+			width: 			100px;
+			height: 		100px;
 		}
 
-		div.container {
-			display: grid;
-			justify-items: center;
+		@include sm {
+			width: 			100px;
+			height: 		100px;
 		}
-		
-		div#podcasts-icon {
-			display: 	grid;
-			
-			width: 		200px;
-			height: 	200px;
-	
-			margin: 	100px 0;
 
-			justify-content: flex-end;
-			
-			@include md-up {
-				margin-top: 50px;
-			}
+		@include md {
+			width: 			130px;
+			height: 		130px;
+		}
 
-			padding: 	40px;
+		@include lg {
+			width: 			150px;
+			height: 		150px;
+		}
 
-			img {
-				display: inline-block;
-				max-width: 100%;
-				max-height: 100%;
-			}
-		
-			div.play {
-				display: inline-block;
-				content: "";
-				justify-self: center;
+		@include xl {
+			width: 			175px;
+			height: 		175px;
+		}
+
+		div.logo--soundbar {
+
+			display: 	flex;
+			position: 	relative;
+
+			float: 		left;
+
+			@include clearfix;
+
+			background: $gray-300;
+
+			height: 	100%;
+			width: 		8%;
+
+			margin-right: 3%;
+
+			&::after {
+				display: block;
+				position: relative;
+
+				width: 100%;
+
 				align-self: center;
-				width: 100px;
-				height: 100px;
-				margin-left: 15px;
-				border-style: solid;
-				border-width: 50px 0 50px 86.6px;
-				border-color: transparent transparent transparent $black;
-				@include dark-mode {
-					border-color: transparent transparent transparent $gray-600 !important;
+
+				background: $cyan;
+
+				content: "";
+			}
+
+			&:nth-child(1)::after {
+				height: 4%;
+				@include animation(soundbar1 0.5s infinite alternate);			
+			}
+
+			&:nth-child(2)::after {
+				height: 35%;
+				@include animation(soundbar2 0.75s infinite alternate);
+			}
+
+			&:nth-child(3)::after {
+				height: 20%;
+				@include animation(soundbar3 0.5s infinite alternate);
+			}
+
+			&:nth-child(4)::after {
+				height: 55%;
+				@include animation(soundbar4 0.9s infinite alternate);
+			}
+
+			&:nth-child(5)::after {
+				height: 85%;
+				@include animation(soundbar5 0.5s infinite alternate);
+			}
+
+			&:nth-child(6)::after {
+				height: 45%;
+				@include animation(soundbar6 .7s infinite alternate);
+			}
+
+			&:nth-child(7)::after {
+				height: 65%;
+				@include animation(soundbar7 0.9s infinite alternate);
+			}
+
+			&:nth-child(8)::after {
+				height: 20%;
+				@include animation(soundbar8 0.85s infinite alternate);
+			}
+
+			&:nth-child(9)::after {
+				height: 2%;
+				@include animation(soundbar9 1s infinite alternate);
+			}
+
+			@include keyframes(soundbar1) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				50% {
+					transform: scaleY(0.8);
+				}
+				100% { 
+					transform: scaleY(1.5);
 				}
 			}
 
-			&.start {
-				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 0px, 30px);
-				@include dark-mode {
-					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 0px, 30px);
+			@include keyframes(soundbar2) {
+				0%  { 
+					transform: scaleY(1);
 				}
-				transition: all 1s ease;
-				transform: scale(0.96, 0.96);
-				border: 1px #ffffff00 solid;
-				@include dark-mode {
-					border: 1px #22222233 solid;
+				30% {
+					transform: scaleY(0.8);
 				}
-			}
-	
-			&.end {
-				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 50px, 30px);
-				@include dark-mode {
-					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 50px, 30px);
+				70% { 
+					transform: scaleY(1.5);
 				}
-				transition: all 1s ease 0.25s;
-				transform: scale(1, 1);
-				border: 1px #ffffff33 solid;
-				@include dark-mode {
-					border: 1px #22222233 solid;
+				100% { 
+					transform: scaleY(0.5);
 				}
 			}
 
-			&:hover,
-			&:focus {
-				@include neu-flat-raised($gray-200, #dcdcdc, #f4f4f4, 5px, 30px);
-				@include dark-mode {
-					@include neu-flat-raised($gray-800, #2c3136, #3c434a, 5px, 30px);
+			@include keyframes(soundbar3) {
+				0%  { 
+					transform: scaleY(1);
 				}
-				transition: all 0.25s ease;
-				transform: scale(0.99, 0.99);
+				40% {
+					transform: scaleY(0.5);
+				}
+				100% { 
+					transform: scaleY(1.5);
+				}
 			}
+
+			@include keyframes(soundbar4) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				25% {
+					transform: scaleY(0.8);
+				}
+				50% {
+					transform: scaleY(1);
+				}
+				75% {
+					transform: scaleY(0.9);
+				}
+				100% { 
+					transform: scaleY(1.5);
+				}
+			}
+
+			@include keyframes(soundbar5) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				80% {
+					transform: scaleY(0.6);
+				}
+				100% { 
+					transform: scaleY(0.8);
+				}
+			}
+
+			@include keyframes(soundbar6) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				50% {
+					transform: scaleY(0.5);
+				}
+				100% { 
+					transform: scaleY(0.75);
+				}
+			}
+
+			@include keyframes(soundbar7) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				30% {
+					transform: scaleY(1.2);
+				}
+				70% {
+					transform: scaleY(0.7);
+				}
+				100% { 
+					transform: scaleY(1.1);
+				}
+			}
+
+			@include keyframes(soundbar8) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				40% {
+					transform: scaleY(1.2);
+				}
+				100% { 
+					transform: scaleY(0.9);
+				}
+			}
+
+			@include keyframes(soundbar9) {
+				0%  { 
+					transform: scaleY(1);
+				}
+				50% {
+					transform: scaleY(2);
+				}
+				100% { 
+					transform: scaleY(0.9);
+				}
+			}
+
 		}
-	}
-	
-	section#dept-bad-ideas {
-		background: #ffd700;
-		color: $black;
 
-		padding-bottom: 50px;
-
-		div {
-		
-			display: grid;
-
-			justify-items: center;
-			align-items: center;
-
-			img {
-				max-width: 100%;
-				padding: 0 20px;
-				@include md-up{
-					padding: 0;
-					max-width: 500px;
-				}
-				justify-self: center;
-			}
-
-			p {
-				text-align: center;
-				@extend h2;
-			}
-			a.button {
-
-				color: $black;
-				display: inline-block;
-				padding: 20px 50px;
-
-				border: 1px #fff70027 solid;
-				@include neu-flat-raised(#ffd700, #d9b80099, #fff70099, 15px, 10px);
-
-				transform: scale(1,1);
-				text-decoration: none;
-				transition: all 0.25s ease;
-
-				&:hover,
-				&:focus {
-					color: $black;
-					@include neu-flat-raised(#ffd700, #d9b70099, #fff70099, 5px, 10px);
-					transition: all 0.25s ease;
-					transform: scale(0.99, 0.99);
-				}
-				&:active {
-					color: $black;
-					@include neu-flat-inset(#ffd700, #d9b70099, #fff70099, 5px, 10px);
-					transition: all 0.25s ease;
-					transform: scale(0.98, 0.98);
-				}
-			}
-
-		}
-
-	}
-	
-	section#wdydt {
-		background: $cyan;
-		
-		div.box{
-			@include neu-flat-raised($cyan, #0087c1, #00b7ff, 50px, 30px);
-		}
 	}
 		
 }

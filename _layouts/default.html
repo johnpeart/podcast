@@ -5,7 +5,9 @@
 
   <body id="{{ page.layout }}"{% if page.theme %} class="theme-{{ page.theme }} no-js"{% else %} class="no-js"{% endif %}>
 	  
-  	{% include skiplink.html %}
+    {% include skiplink.html %}
+    
+    {% include header.html %}
 
     {{ content }}
     

@@ -4,13 +4,6 @@ header#site-header {
 	
 	position: 	relative;
 	z-index: 	10000000;
-	
-	@include md-up {
-		@include supports-sticky {
-			top:				0;
-			bottom:			auto;
-		}
-	}
 
 	background: 		$header-background;
 	
