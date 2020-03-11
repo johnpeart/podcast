@@ -9,8 +9,6 @@ body#home {
 	section {
 		padding-top: 			100px;
 		padding-bottom: 		100px;
-
-
 	}
 
 	div.logo {
@@ -240,5 +238,77 @@ body#home {
 		}
 
 	}
-		
+
+	section#dept-bad-ideas { 
+
+		padding-top: 0;
+		padding-bottom: 100px;
+
+		div.container {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			
+			background: $bad-ideas-yellow;
+			background-image: url("/assets/images/department-of-bad-ideas-logo-emblem-only.svg");
+			background-repeat: no-repeat;
+			background-size: 150% 120%;
+			@include md-up {
+				background-size: 60% 100%;
+			}
+			background-origin: content-box, content-box;
+			
+			@include clearfix;
+		}
+
+		div.pod-description {
+			max-width: 65ch;
+
+			float: right;
+			margin-right: 20px;
+
+			p:last-child {
+				padding-bottom: 0;
+			}
+			margin-bottom: 50px;
+		}
+
+		img {
+
+			width: 100%;
+
+			max-width: 200px;
+
+			margin-bottom: 30px;
+
+			@include md-up {
+				max-width: 300px;
+
+				margin-top: 100px;
+			}
+
+		}
+
+		p.link {
+			margin-top: 20px;
+
+			a {
+				color: $black;
+				text-decoration: none;
+				border: 2px solid $black;
+				padding: 10px 25px;
+
+				&:hover {
+					color: $bad-ideas-yellow;
+					background: $black;
+				}
+				&:focus {
+					outline: 2px solid $black;
+					border: 2px solid $bad-ideas-yellow;
+					color: $bad-ideas-yellow;
+					background: $black;
+				}
+			}
+		}
+	
+	}
 }

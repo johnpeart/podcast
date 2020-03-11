@@ -42,4 +42,9 @@ body {
 	    background: $body-background-dark-mode;
 	}
 	
+	footer#site-footer section.container {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
 }
