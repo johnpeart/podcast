@@ -130,21 +130,21 @@ $p-font-weight:						normal;
 
 // HEADER TEXT SIZES & SPACING
 
-$header-font-size-base:					$p-font-size-base + 4px;
+$header-font-size-base:					$p-font-size-base + 6px;
 $header-font-size-base-xs:				$header-font-size-base;
-$header-font-size-base-sm:				$p-font-size-base-sm + 4px;
-$header-font-size-base-md:				$p-font-size-base-md + 4px;
-$header-font-size-base-lg:				$p-font-size-base-lg + 4px;
-$header-font-size-base-xl:				$p-font-size-base-xl + 4px;
+$header-font-size-base-sm:				$p-font-size-base-sm + 6px;
+$header-font-size-base-md:				$p-font-size-base-md + 6px;
+$header-font-size-base-lg:				$p-font-size-base-lg + 6px;
+$header-font-size-base-xl:				$p-font-size-base-xl + 6px;
 
-$header-line-height-base:				$header-font-size-base + ($header-font-size-base / 4);
-$header-line-height-base-xs:				$header-line-height-base;
-$header-line-height-base-sm:				$header-font-size-base-sm + ($header-font-size-base-sm / 4);
-$header-line-height-base-md:				$header-font-size-base-md + ($header-font-size-base-md / 4);
-$header-line-height-base-lg:				$header-font-size-base-lg + ($header-font-size-base-lg / 4);
-$header-line-height-base-xl:				$header-font-size-base-xl + ($header-font-size-base-xl / 5);
+$header-line-height-base:				$p-font-size-base;
+$header-line-height-base-xs:			$header-line-height-base + 13px;
+$header-line-height-base-sm:			$header-font-size-base-sm + 7px;
+$header-line-height-base-md:			$header-font-size-base-md - 1px;
+$header-line-height-base-lg:			$header-font-size-base-lg;
+$header-line-height-base-xl:			$header-font-size-base-xl;
 
-$header-padding-top:						$header-font-size-base / 2;
+$header-padding-top:					$header-font-size-base / 2;
 $header-padding-top-xs:					$header-font-size-base-xs / 2;
 $header-padding-top-sm:					$header-font-size-base-sm / 2;
 $header-padding-top-md:					$header-font-size-base-md / 2;
