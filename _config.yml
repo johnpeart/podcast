@@ -61,3 +61,5 @@ plugins:
 - jekyll-redirect-from
 
 remote_theme: johnpeart/jekyll-theme
+
+rebuild: "2020-12-03 00:23"
