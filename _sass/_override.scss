@@ -1,17 +1,15 @@
 // OVERRIDE VARIABLES FOR SUBSITES
 
-$h2-padding-top:					$h2-font-size-base;
-$h2-padding-top-xs:					$h2-font-size-base-xs;
-$h2-padding-top-sm:					$h2-font-size-base-sm;
-$h2-padding-top-md:					$h2-font-size-base-md;
-$h2-padding-top-lg:					$h2-font-size-base-lg;
-$h2-padding-top-xl:					$h2-font-size-base-xl;
+$h1-padding-top:					$h1-font-size-base;
+$h1-padding-top-xs:					$h1-font-size-base-xs * 0.5;
+$h1-padding-top-sm:					$h1-font-size-base-sm * 0.5;
+$h1-padding-top-md:					$h1-font-size-base-md * 0.5;
+$h1-padding-top-lg:					$h1-font-size-base-lg * 0.5;
+$h1-padding-top-xl:					$h1-font-size-base-xl * 0.5;
 
-$h2-padding-bottom:					$h2-font-size-base;
-$h2-padding-bottom-xs:				$h2-font-size-base-xs / 2;
-$h2-padding-bottom-sm:				$h2-font-size-base-sm / 2;
-$h2-padding-bottom-md:				$h2-font-size-base-md / 2;
-$h2-padding-bottom-lg:				$h2-font-size-base-lg / 2;
-$h2-padding-bottom-xl:				$h2-font-size-base-xl / 2;
-
-$h2-text-align:						left;
+$h1-padding-bottom:					0;
+$h1-padding-bottom-xs:				0;
+$h1-padding-bottom-sm:				0;
+$h1-padding-bottom-md:				0;
+$h1-padding-bottom-lg:				0;
+$h1-padding-bottom-xl:				0;
