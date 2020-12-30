@@ -1469,7 +1469,7 @@ body#photos-home article.grid-item { display: block; position: relative; list-st
 
 @media only screen and (max-width: 765px) { body#photos-home article.grid-item { margin: 0 0 10px 0; width: 100%; height: 200px; } }
 
-@media only screen and (min-width: 766px) { body#photos-home article.grid-item { margin: 0 0 20px 0; width: 50%; height: 300px; max-width: 50%; } body#photos-home article.grid-item:nth-of-type(odd) { margin-left: 0; margin-right: 10px; } body#photos-home article.grid-item:nth-of-type(even) { margin-left: 10px; margin-right: 0; } }
+@media only screen and (min-width: 766px) { body#photos-home article.grid-item { margin: 0 0 20px 0; width: calc(50% - 10px); height: 300px; max-width: 50%; } body#photos-home article.grid-item:nth-of-type(odd) { margin-left: 0; margin-right: 10px; } body#photos-home article.grid-item:nth-of-type(even) { margin-left: 10px; margin-right: 0; } }
 
 body#photos-home article.grid-item p.grid-caption, body#photos-home article.grid-item .grid-caption.skip-link { display: block; opacity: 0; width: 100%; padding: 10px 15px; background: #009fe3; color: #1d1d1d; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
@@ -1524,6 +1524,46 @@ body#photos-photo dl span.dl-item { display: block; position: relative; padding-
 @media only screen and (min-width: 766px) { body#photos-photo dl span.dl-item { width: 50%; max-width: 50%; float: left; } }
 
 body#photos-photo dl::after { content: ""; clear: both; display: table; }
+
+body#photos-photo article div.footnotes { padding-top: 96px; max-width: 600px; }
+
+body#photos-photo article div.footnotes:before { display: block; font-weight: bold; font-style: normal; text-align: left; text-decoration: none; text-transform: none; content: "Footnotes"; }
+
+@media only screen and (max-width: 599px) { body#photos-photo article div.footnotes:before { font-size: 22px; line-height: 27.5px; padding-top: 22px; padding-bottom: 7.3333333333px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { body#photos-photo article div.footnotes:before { font-size: 22px; line-height: 27.5px; padding-top: 22px; padding-bottom: 7.3333333333px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { body#photos-photo article div.footnotes:before { font-size: 22px; line-height: 27.5px; padding-top: 22px; padding-bottom: 7.3333333333px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { body#photos-photo article div.footnotes:before { font-size: 26px; line-height: 32.5px; padding-top: 26px; padding-bottom: 8.6666666667px; } }
+
+@media only screen and (min-width: 1200px) { body#photos-photo article div.footnotes:before { font-size: 30px; line-height: 40px; padding-top: 30px; padding-bottom: 10px; } }
+
+@media only screen and (max-width: 599px) { body#photos-photo article div.footnotes { padding-top: 96px; max-width: 400px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { body#photos-photo article div.footnotes { padding-top: 108px; max-width: 500px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { body#photos-photo article div.footnotes { padding-top: 108px; max-width: 450px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { body#photos-photo article div.footnotes { padding-top: 120px; max-width: 600px; } }
+
+@media only screen and (min-width: 1200px) { body#photos-photo article div.footnotes { padding-top: 132px; max-width: 600px; } }
+
+body#photos-photo article div.footnotes ul, body#photos-photo article div.footnotes ol { padding-left: 32px; }
+
+@media only screen and (min-width: 766px) { body#photos-photo article div.footnotes ul, body#photos-photo article div.footnotes ol { padding-left: 0; } }
+
+body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 16px; line-height: 20px; padding-bottom: 16px; font-weight: normal; }
+
+@media only screen and (max-width: 599px) { body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 16px; line-height: 20px; padding-bottom: 16px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 765px) { body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 18px; line-height: 22.5px; padding-bottom: 18px; } }
+
+@media only screen and (min-width: 766px) and (max-width: 999px) { body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 18px; line-height: 22.5px; padding-bottom: 18px; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) { body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 20px; line-height: 25px; padding-bottom: 20px; } }
+
+@media only screen and (min-width: 1200px) { body#photos-photo article div.footnotes p, body#photos-photo article div.footnotes .skip-link, body#photos-photo article div.footnotes li { font-size: 22px; line-height: 26.4px; padding-bottom: 22px; } }
 
 body.theme-apple h1 { color: #e6007e; /* Text and background color for dark mode */ }
 
