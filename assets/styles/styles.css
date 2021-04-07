@@ -1938,7 +1938,7 @@ body#projects-home a.project-url:active { text-decoration: underline; }
 
 body#projects-home p.project-notes { padding: 0; }
 
-body#podcast-home section { padding-top: 100px; padding-bottom: 100px; }
+body#podcast-home section { padding-top: 75px; padding-bottom: 50px; }
 
 body#podcast-home div.logo { display: inline-block; position: relative; width: 100px; height: 100px; }
 
@@ -2143,6 +2143,8 @@ body#podcast-home div.logo div.logo--soundbar:nth-child(9)::after { height: 2%; 
 @-o-keyframes soundbar9 { 0% { transform: scaleY(1); }
   50% { transform: scaleY(2); }
   100% { transform: scaleY(0.9); } }
+
+body#podcast-home h1.page-title { padding: 20px 0 0 0; }
 
 body#podcast-home section#dept-bad-ideas { color: #1d1d1d; padding-top: 0; padding-bottom: 100px; }
 
