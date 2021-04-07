@@ -5,8 +5,8 @@ title: Podcasts
 description: "I’m John Peart. I’m a policy professional with an interest in technology, services and diversity. I write about all sorts of things, and I build things in code."
 author: "John Peart"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://podcast.johnpe.art"
+baseurl: "/podcast" # the subpath of your site, e.g. /blog
+url: "https://www.johnpe.art"
 
 ####################
 # Feature settings #
