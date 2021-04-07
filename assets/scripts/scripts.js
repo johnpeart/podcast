@@ -1,15 +1,18 @@
-window.onload = function() {
-  checkJS();
-};
+var menuToggle = document.getElementById("header-menu-toggle");
+var menuItems = document.getElementById("header-menu-items");
 
-function checkJS() {
-	document.body.className = document.body.className.replace("no-js","js");
-}
-
-function toggleMenu() {
-  var menu = document.getElementById("header-menu-links");
-  menu.classList.toggle("open");
+menuToggle.addEventListener("click", function() {
   
-  var menu = document.getElementById("header-menu-toggle-image");
-  menu.classList.toggle("open");
-}
+  this.classList.toggle("open");
+  this.classList.toggle("closed");
+  
+  if (this.classList.contains("open")) {
+    this.setAttribute("aria-expanded", "true");
+  } else {
+    this.setAttribute("aria-expanded", "false");
+  }
+  
+  menuItems.classList.toggle("open");
+  menuItems.classList.toggle("closed");
+  
+});
