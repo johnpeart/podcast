@@ -1,1 +1,1 @@
-Sitemap: https://www.johnpe.art/podcast/sitemap.xml
+Sitemap: https://podcast.johnpe.art/sitemap.xml
